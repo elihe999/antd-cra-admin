@@ -42,10 +42,6 @@ class Login extends React.Component<LoginProps> {
             }
         });
     };
-    gitHub = () => {
-        window.location.href =
-            'https://github.com/login/oauth/authorize?client_id=792cdcd244e98dcd2dee&redirect_uri=http://localhost:3006/&scope=user&state=reactAdmin';
-    };
     render() {
         const { getFieldDecorator } = this.props.form!;
         return (
@@ -61,7 +57,7 @@ class Login extends React.Component<LoginProps> {
                                 rules: [{ required: true, message: '请输入用户名!' }],
                             })(
                                 <Input
-                                    prefix={<Icon type="user" style={{ fontSize: 13 }} />}
+                                    prefix={<Icon type="user" style={{ fontSize: 15 }} />}
                                     placeholder="管理员输入admin, 游客输入guest"
                                 />
                             )}
@@ -71,7 +67,7 @@ class Login extends React.Component<LoginProps> {
                                 rules: [{ required: true, message: '请输入密码!' }],
                             })(
                                 <Input
-                                    prefix={<Icon type="lock" style={{ fontSize: 13 }} />}
+                                    prefix={<Icon type="lock" style={{ fontSize: 15 }} />}
                                     type="password"
                                     placeholder="管理员输入admin, 游客输入guest"
                                 />
@@ -95,10 +91,6 @@ class Login extends React.Component<LoginProps> {
                             </Button>
                             <p style={{ display: 'flex', justifyContent: 'space-between' }}>
                                 <span>或 现在就去注册!</span>
-                                <span onClick={this.gitHub}>
-                                    <Icon type="github" />
-                                    (第三方登录)
-                                </span>
                             </p>
                         </FormItem>
                     </Form>

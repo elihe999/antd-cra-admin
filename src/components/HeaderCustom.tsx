@@ -6,8 +6,7 @@ import screenfull from 'screenfull';
 import avater from '../style/imgs/b1.jpg';
 import SiderCustom from './SiderCustom';
 import { Menu, Icon, Layout, Badge, Popover } from 'antd';
-import { gitOauthToken, gitOauthInfo } from '../axios';
-import { queryString } from '../utils';
+// import { queryString } from '../utils';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { PwaInstaller } from './widget';
 import { connectAlita } from 'redux-alita';
@@ -33,21 +32,11 @@ class HeaderCustom extends Component<HeaderCustomProps, HeaderCustomState> {
         visible: false,
     };
     componentDidMount() {
-        const QueryString = queryString() as any;
         let _user,
             storageUser = localStorage.getItem('user');
 
         _user = (storageUser && JSON.parse(storageUser)) || '测试';
-        if (!_user && QueryString.hasOwnProperty('code')) {
-            gitOauthToken(QueryString.code).then((res: any) => {
-                gitOauthInfo(res.access_token).then((info: any) => {
-                    this.setState({
-                        user: info,
-                    });
-                    localStorage.setItem('user', JSON.stringify(info));
-                });
-            });
-        } else {
+        if (_user ) {
             this.setState({
                 user: _user,
             });
@@ -60,6 +49,7 @@ class HeaderCustom extends Component<HeaderCustomProps, HeaderCustomState> {
     };
     menuClick = (e: { key: string }) => {
         e.key === 'logout' && this.logout();
+        console.log(e.key)
     };
     logout = () => {
         localStorage.removeItem('user');
