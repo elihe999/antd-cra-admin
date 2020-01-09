@@ -793,6 +793,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.3.1":
+  version "7.7.7"
+  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
+  integrity sha1-GUdpyo1td5DsI2Ba+e4+QqCqec8=
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.0", "@babel/template@^7.4.4", "@babel/template@^7.6.0":
   version "7.6.0"
   resolved "https://registry.npm.taobao.org/@babel/template/download/@babel/template-7.6.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Ftemplate%2Fdownload%2F%40babel%2Ftemplate-7.6.0.tgz#7f0159c7f5012230dad64cca42ec9bdb5c9536e6"
@@ -5220,6 +5227,13 @@ html-minifier@^3.5.20:
     relateurl "0.2.x"
     uglify-js "3.4.x"
 
+html-parse-stringify2@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/html-parse-stringify2/download/html-parse-stringify2-2.0.1.tgz#dc5670b7292ca158b7bc916c9a6735ac8872834a"
+  integrity sha1-3FZwtyksoVi3vJFsmmc1rIhyg0o=
+  dependencies:
+    void-elements "^2.0.1"
+
 html-to-draftjs@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/html-to-draftjs/download/html-to-draftjs-1.4.0.tgz#8a3cbbba5b49d50be8ce85cc08b112d5bf00fc1d"
@@ -5335,6 +5349,13 @@ husky@^3.0.5:
     read-pkg "^5.1.1"
     run-node "^1.0.0"
     slash "^3.0.0"
+
+i18next@^19.0.3:
+  version "19.0.3"
+  resolved "https://registry.npm.taobao.org/i18next/download/i18next-19.0.3.tgz#31fd3165762d9802e08a2a86932db4eff5c862e9"
+  integrity sha1-Mf0xZXYtmALgiiqGky207/XIYuk=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   version "0.4.24"
@@ -9210,6 +9231,14 @@ react-error-overlay@^6.0.3:
   version "6.0.3"
   resolved "https://registry.npm.taobao.org/react-error-overlay/download/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
 
+react-i18next@^11.2.7:
+  version "11.2.7"
+  resolved "https://registry.npm.taobao.org/react-i18next/download/react-i18next-11.2.7.tgz#d0dd61ae6127589e316c6293fc948fe413c63580"
+  integrity sha1-0N1hrmEnWJ4xbGKT/JSP5BPGNYA=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    html-parse-stringify2 "2.0.1"
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   version "16.9.0"
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.9.0.tgz?cache=0&sync_timestamp=1568742277284&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-is%2Fdownload%2Freact-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
@@ -11082,6 +11111,11 @@ verror@1.10.0:
 vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
+
+void-elements@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/void-elements/download/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
+  integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"

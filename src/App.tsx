@@ -6,8 +6,21 @@ import HeaderCustom from './components/HeaderCustom';
 import { Layout, notification, Icon } from 'antd';
 import { ThemePicker } from './components/widget';
 import { connectAlita } from 'redux-alita';
+import i18n from 'i18next';
+// import { useTranslation, initReactI18next } from 'react-i18next';
+import enUsTrans from "./i18n/en-us.json";
 
 const { Content, Footer } = Layout;
+
+i18n.init({
+    // call resources
+    resources: {
+        en: {
+            translation: enUsTrans,
+        },
+    },
+    fallbackLng: "en",
+})
 
 type AppProps = {
     setAlitaState: (param: any) => void;
@@ -105,6 +118,7 @@ class App extends Component<AppProps> {
                             <Routes auth={auth} />
                         </Content>
                         <Footer style={{ textAlign: 'center' }}>
+                            {i18n.t("test")}
                             React-Admin ©{new Date().getFullYear()} Created by 865470087@qq.com
                         </Footer>
                     </Layout>
