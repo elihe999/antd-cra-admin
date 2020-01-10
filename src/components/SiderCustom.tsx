@@ -86,7 +86,7 @@ class SiderCustom extends Component<SiderCustomProps, SiderCustomState> {
                 collapsed={collapsed}
                 style={{ overflowY: 'auto' }}
             >
-                <div className="logo" />
+                <div className="logo" >111</div>
                 <SiderMenu
                     menus={routes.menus}
                     onClick={this.menuClick}

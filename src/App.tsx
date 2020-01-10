@@ -88,7 +88,6 @@ class App extends Component<AppProps> {
         }
     }
     getClientWidth = () => {
-        // 获取当前浏览器宽度并设置responsive管理响应式
         const { setAlitaState } = this.props;
         const clientWidth = window.innerWidth;
         console.log(clientWidth);

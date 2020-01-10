@@ -27,6 +27,7 @@ import RouterEnter from './auth/RouterEnter';
 import Cssmodule from './cssmodule';
 import MapUi from './ui/map';
 import QueryParams from './extension/QueryParams';
+import SelectCase from './tables/SelectCase';
 
 const WysiwygBundle = Loadable({
     // 按需加载富文本配置
@@ -59,4 +60,5 @@ export default {
     Cssmodule,
     MapUi,
     QueryParams,
+    SelectCase,
 } as any;

@@ -104,28 +104,7 @@ class Dashboard extends React.Component {
                             </Card>
                         </div>
                     </Col>
-                    <Col className="gutter-row" md={8}>
-                        <div className="gutter-box">
-                            <Card bordered={false}>
-                                <div className="pb-m">
-                                    <h3>消息栏</h3>
-                                </div>
-                                <span className="card-tool"><Icon type="sync" /></span>
-                                <ul className="list-group no-border">
-                                    <li className="list-group-item">
-                                        <span className="pull-left w-40 mr-m">
-                                            <img src={b1} className="img-responsive img-circle" alt="test" />
-                                        </span>
-                                        <div className="clear">
-                                            <span className="block">鸣人</span>
-                                            <span className="text-muted">终于当上火影了！</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </Card>
-                        </div>
-                    </Col>
-                    <Col className="gutter-row" md={8}>
+                    <Col className="gutter-row" md={16}>
                         <div className="gutter-box">
                             <Card bordered={false}>
                                 <div className="pb-m">
