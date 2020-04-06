@@ -20,7 +20,7 @@
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.1"
   },
   "scripts": {
     "start": "BROWSER=none react-app-rewired start --scripts-version react-scripts-ts",
